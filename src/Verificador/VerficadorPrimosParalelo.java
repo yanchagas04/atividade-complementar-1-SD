@@ -23,7 +23,7 @@ public class VerficadorPrimosParalelo extends Object {
                 break;
             }
         }
-        System.out.println("Thread " + Thread.currentThread().getName() + " analisou " + numerosAnalisados + " números.");
+        System.out.println("Thread " + Thread.currentThread().getName() + " analisou " + numerosAnalisados + " numeros.");
     }
 
     public synchronized void verificarProximoNumero() throws Exception {

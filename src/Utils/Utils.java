@@ -48,4 +48,17 @@ public final class Utils {
         return true;
     }
 
+    public static void esperarThreads(List<Thread> threads) throws Exception {
+        while (true) {
+            int count = 0;
+            for (Thread thread : threads) {
+                if (!thread.isAlive()) {
+                    count++;
+                }
+            }
+            if (count == threads.size()) {
+                break;
+            }
+        }
+    }
 }
